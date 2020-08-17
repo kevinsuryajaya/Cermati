@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link href="css/index.css" rel="stylesheet" />
+
+    <title>Kevin Suryajaya | Cermati.com Front-end Developer Entry Test</title>
+  </head>
+  <body>
+    <!-- Notification -->
+    <div id="notification" class="notification-panel notification-slider">
+      <div class="notification-section">
+        <div class="notification-content">
+          <p class="notification-text">
+            By accessing and using this website, you acknowledge that you have
+            read and understand our <a href="#">Cookie Policy</a>,
+            <a href="#">Privacy Policy</a>, and our
+            <a href="#">Terms of Service</a>.
+          </p>
+        </div>
+        <button
+          class="notification-button"
+          onclick="document.getElementById('notification').classList.toggle('closed');"
+        >
+          Got it
+        </button>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <div class="header-panel">
+      <div class="header-cover">
+        <img src="images/y-logo-white.png" alt="logo" class="header-logo" />
+        <div class="header-content">
+          <h1 class="text-normal">Hello! I'm Kevin Suryajaya</h1>
+          <h2 class="text-thick">Consult, Design, and Develop Websites</h2>
+          <h4 class="text-normal header-text">
+            Have something great in mind? Feel free to contact me.
+          </h4>
+          <h4 class="text-normal header-text">
+            I'll help you to make it happen.
+          </h4>
+          <button class="header-button">LET'S MAKE CONTACT</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Highlight -->
+    <div class="highlight-panel">
+      <div class="highlight-title">
+        <div class="highlight-title-section">
+          <h1 class="text-normal highlight-title-text">How Can I Help You?</h1>
+          <h4 class="text-normal">
+            Our work then targeted, best practices outcomes social innovation
+            synergy. Venture philanthropy, revolutionary inclusive policymaker
+            relief. User-centered program areas scale.
+          </h4>
+        </div>
+      </div>
+
+      <div class="highlight-row responsive">
+        <div class="highlight-column">
+          <div class="highlight-card">
+            <div class="highlight-card-header">
+              <p>Consult <i class="fa fa-comments"></i></p>
+            </div>
+            <div class="highlight-card-content">
+              <p>
+                Co-create, design thinking; strengthen infrastructure resist
+                granular. Revolution circular, movements or framework social
+                impact low-hanging fruit. Save the world compelling
+                revolutionary progress.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="highlight-column">
+          <div class="highlight-card">
+            <div class="highlight-card-header">
+              <p>Design <i class="fa fa-paint-brush"></i></p>
+            </div>
+            <div class="highlight-card-content">
+              <p>
+                Policymaker collaborates collective impact humanitarian shared
+                value vocabulary inspire issue outcomes agile. Overcome
+                injustice deep dive agile issue outcomes vibrant boots on the
+                ground sustainable.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="highlight-column">
+          <div class="highlight-card">
+            <div class="highlight-card-header">
+              <p>Develop <i class="fa fa-cubes"></i></p>
+            </div>
+            <div class="highlight-card-content">
+              <p>
+                Revolutionary circular, movements a or impact framework social
+                impact low- hanging. Save the compelling revolutionary inspire
+                progress. Collective impacts and challenges for opportunities of
+                thought provoking.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="highlight-column">
+          <div class="highlight-card">
+            <div class="highlight-card-header">
+              <p>Marketing <i class="fa fa-bullhorn"></i></p>
+            </div>
+            <div class="highlight-card-content">
+              <p>
+                Peaceful; vibrant paradigm, collaborative cities. Shared
+                vocabulary agile, replicable, effective altruism youth. Mobilize
+                commitment to overcome injustice resilient, uplift social
+                transparent effective.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="highlight-column">
+          <div class="highlight-card">
+            <div class="highlight-card-header">
+              <p>Manage <i class="fa fa fa-tasks"></i></p>
+            </div>
+            <div class="highlight-card-content">
+              <p>
+                Change-makers innovation or shared unit of analysis. Overcome
+                injustice outcomes strategize vibrant boots on the ground
+                sustainable. Optimism, effective altruism invest optimism
+                corporate social.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="highlight-column">
+          <div class="highlight-card">
+            <div class="highlight-card-header">
+              <p>Evolve <i class="fa fa-line-chart"></i></p>
+            </div>
+            <div class="highlight-card-content">
+              <p>
+                Activate catalyze and impact contextualize humanitarian. Unit of
+                analysis overcome injustice storytelling altruism. Thought
+                leadership mass incarceration. Outcomes big data, fairness,
+                social game-changer.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Newsletter -->
+    <div
+      id="newsletter"
+      data-position="bottom"
+      data-offset="700"
+      class="newsletter-panel notViewed animBlock newsletter-slide"
+    >
+      <span
+        class="newsletter-close-button"
+        onclick="document.getElementById('newsletter').classList.toggle('closed'); timeSession()"
+        >x</span
+      >
+      <div class="newsletter-section">
+        <div class="newsletter-header">
+          <h2 class="newsletter-title">
+            Get latest updates in web technologies
+          </h2>
+        </div>
+        <div class="newsletter-content">
+          <p>
+            I write articles related to web technologies, such as design trends,
+            development tools, UI/UX case studies and reviews, and more. Sign up
+            to my newsletter to get them all.
+          </p>
+        </div>
+        <div class="newsletter-form">
+          <input
+            class="newsletter-input"
+            type="text"
+            placeholder="Email address"
+          />
+          <button class="newsletter-button">Count me in!</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      &#169; 2020 Kevin Suryajaya. All rights reserved.
+    </div>
+
+    <script>
+      // sticky notification
+      window.onscroll = function () {
+        myFunction();
+      };
+
+      var navbar = document.getElementById("notification");
+      var sticky = navbar.offsetTop;
+
+      function myFunction() {
+        if (window.pageYOffset > sticky) {
+          navbar.classList.add("notification-sticky");
+        } else {
+          navbar.classList.remove("notification-sticky");
+        }
+      }
+
+      // Scroll 1 of 3 for Newsletter
+      $(function () {
+        var $blocks = $(".animBlock.notViewed");
+        var $window = $(window);
+
+        $window.on("scroll", function (e) {
+          $blocks.each(function (i, elem) {
+            if ($(this).hasClass("viewed")) return;
+
+            isScrolledIntoView($(this));
+          });
+        });
+      });
+
+      function isScrolledIntoView(elem) {
+        var docViewTop = $(window).scrollTop();
+        var docViewBottom = docViewTop + $(window).height();
+        var elemOffset = 50;
+
+        if (elem.data("offset") != undefined) {
+          elemOffset = elem.data("offset");
+        }
+        var elemTop = $(elem).offset().top;
+        var elemBottom = elemTop + $(elem).height();
+
+        if (elemOffset != 0) {
+          // scrolling down from top
+          elemBottom = elemTop + $(elem).height() - elemOffset;
+        }
+
+        if (elemBottom <= docViewBottom && elemTop >= docViewTop) {
+          // once an element is visible exchange the classes
+          $(elem).removeClass("notViewed").addClass("viewed");
+        }
+      }
+
+      // Timer 10 Minute for Newsletter
+      var minute = 10;
+      var now = new Date().getTime();
+      var element = document.getElementById("newsletter");
+
+      function timeSession() {
+        var setupTime = sessionStorage.getItem("setupTime");
+
+        if (setupTime == null) {
+          sessionStorage.setItem("setupTime", now);
+        } else {
+          sessionStorage.clear();
+          sessionStorage.setItem("setupTime", now);
+        }
+      }
+
+      var countTime = sessionStorage.getItem("setupTime");
+
+      if (now - countTime > minute * 60 * 1000) {
+        element.classList.remove("closed");
+      } else {
+        element.classList.toggle("closed");
+      }
+    </script>
+  </body>
+</html>
